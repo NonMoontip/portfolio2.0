@@ -1,0 +1,112 @@
+.home {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.home .hero-guy {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 180px;
+    height: 200px;
+    animation: move-y 6s infinite;
+}
+
+.home .hero-man {
+    position: absolute;
+    width: 2000px;
+    height: auto;
+    bottom: -30px;
+    animation: move-y 10s infinite;
+}
+
+.home .blog-girl {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    width: 200px;
+    height: 220px;
+    animation: move-y 4s infinite;
+}
+
+.home-content {
+    text-align: center;
+
+}
+
+.home-content h1 {
+    font-size: 90px;
+    color: #f8f9fa;
+}
+
+.home-content h5 {
+    color: #f8f9fa;
+}
+
+.home-content h5 span {
+    color: #f8f9fa;
+    font-weight: 900;
+}
+
+@keyframes move-y {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, -20px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .home {
+        height: 600px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .home-content h1 {
+        font-size: 70px;
+        color: #f8f9fa;
+    }
+
+    .home .hero-man {
+        position: absolute;
+        width: auto;
+        height: 400px;
+        bottom: -30px;
+    }
+
+    .home .hero-guy {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        width: 150px;
+        height: 170px;
+    }
+
+
+    .home .blog-girl {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        width: 120px;
+        height: 140px;
+    }
+
+    .home-content h5 {
+        font-size: 10px;
+    }
+
+}

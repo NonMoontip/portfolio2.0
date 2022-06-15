@@ -1,0 +1,92 @@
+.portfolio {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    background-color: #fff;
+}
+
+.port-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.port-content hr {
+    width: 100px;
+    border: 1px solid red;
+    background-color: red;
+    margin: 20px;
+}
+
+.port {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.port .row1,
+.port .row2,
+.port .row3 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.port-box1,
+.port-box2,
+.port-box3 {
+    width: 300px;
+    height: 300px;
+    background-color: #f8f6fa;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transform: scale3d(1, 1, 1);
+    overflow: hidden;
+}
+
+.port-box1 img,
+.port-box2 img,
+.port-box3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.port-box1:hover,
+.port-box2:hover,
+.port-box3:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    box-shadow: 0 2px 10px #333;
+}
+
+@media screen and (max-width: 900px) {
+    .portfolio {
+        height: 2300px;
+    }
+
+    .port {
+        margin: 0;
+    }
+
+    .port .row1,
+    .port .row2,
+    .port .row3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .port-box1,
+    .port-box2,
+    .port-box3 {
+        width: 300px;
+        height: 200px;
+        margin: 20px 0 0 0;
+    }
+}
